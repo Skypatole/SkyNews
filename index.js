@@ -2,16 +2,15 @@ console.log("This is my index js File");
 // 646f496103d546a8b70e2f7dffff58bc
 
 //Initialize the news; api parameters
-// let source = 'bbc-news';
-// let apiKey = '646f496103d546a8b70e2f7dffff58bc'
+let source = 'bbc-news';
+let apiKey = '646f496103d546a8b70e2f7dffff58bc'
 
 //Grab the news container
 let newsAccordion = document.getElementById('newsAccordion');
 
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
-// xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
-xhr.open('GET',`htps://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=646f496103d546a8b70e2f7dffff58bc`, true); 
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
 
 // What to do when response is ready
 xhr.onload = function () {
